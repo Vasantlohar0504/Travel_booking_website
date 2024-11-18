@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete your booking for your dream vacation.">
+    <title>Book Your Vacation - Travel Booking</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Book Your Dream Vacation</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#booking-form">Booking Form</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="booking-form" class="booking-form">
+        <div class="container">
+            <h2>Complete Your Booking</h2>
+            <p>Choose your destination and provide your details to finalize your booking.</p>
+
+            <form id="bookingDetailsForm">
+                <label for="destination">Select Destination</label>
+                <select id="destination" name="destination" required>
+                    <option value="Taj Mahal">Taj Mahal, Agra</option>
+                    <option value="Kerala Backwaters">Kerala Backwaters</option>
+                    <option value="Jaipur, Rajasthan">Jaipur, Rajasthan</option>
+                    <option value="Goa Beaches">Goa Beaches</option>
+                </select>
+
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="fullName" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="dates">Preferred Dates</label>
+                <input type="text" id="dates" name="dates" placeholder="Select your dates" required>
+
+                <label for="special-request">Special Requests</label>
+                <textarea id="special-request" name="specialRequest" placeholder="Any special requests?" rows="4"></textarea>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+
+            <div id="booking-message" style="display:none;">
+                <p>Your booking has been successfully submitted. We will contact you shortly!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Exploring India</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore popular travel destinations in India and book your next vacation.">
+    <title>Explore India</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Exploring India</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#book-now">Book Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Your Dream Vacation Awaits</h2>
+            <p>Discover the best destinations in India and plan your perfect trip today.</p>
+            <button onclick="window.location.href='#destinations'">Explore Destinations</button>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Popular Destinations in India</h2>
+            <div class="destination-cards">
+                <div class="card">
+                    <img src="Tajmahal.jpg" alt="Taj Mahal">
+                    <h3>Taj Mahal, Agra</h3>
+                    <button class="more-info" onclick="window.location.href='tajmahal.html'">More Info</button>
+                </div>
+                <div class="card">
+                    <img src="kerala-backwater-img.jpg" alt="Kerala Backwaters">
+                    <h3>Kerala Backwaters</h3>
+                    <button class="more-info" onclick="window.location.href='kerala_backwater.html'">More Info</button>
+                </div>
+                <div class="card">
+                    <img src="jaypur-palace1.jpg" alt="Jaipur Palace">
+                    <h3>Jaipur, Rajasthan</h3>
+                    <button class="more-info" onclick="window.location.href='jaypur_palace.html'">More Info</button>
+                </div>
+                <div class="card">
+                    <img src="goa-beach.jpg" alt="Goa Beach">
+                    <h3>Goa Beaches</h3>
+                    <button class="more-info" onclick="window.location.href='goa-beach.html'">More Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="book-now" class="book-now">
+    <div class="container">
+        <h2>Book Your Dream Vacation Now!</h2>
+        <p>Choose your destination and book your vacation today. We offer hassle-free booking and exclusive deals.</p>
+        <button onclick="window.location.href='booking.html'">Book Now</button>
+    </div>
+    
+</section>
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to contact us!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Exploring India</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
